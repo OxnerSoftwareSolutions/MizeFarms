@@ -1,0 +1,17 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .navBar a.active {
+    color: #007bff;
+  }
