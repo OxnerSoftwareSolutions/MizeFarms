@@ -1,16 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.css';
 import Home from './components/Home/Home';
 import Landing from './components/Landing/Landing';
-import './App.css';
+import Meats from './components/Meats/Meats';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Landing />} index />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" component={Landing} index />
+          <Route path="/home" component={Home} />
+          <Route exact path="/meats" component={Meats} />
           {/* Add more routes as needed */}
         </Routes>
       </div>

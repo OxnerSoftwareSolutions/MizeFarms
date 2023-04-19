@@ -7,7 +7,7 @@ export const NavBar = () => {
     <nav className="navBar">
       <NavLink exact to="/" activeClassName="active">Landing</NavLink>
       <NavLink to="/home" activeClassName="active">Home</NavLink>
-      {/* Add more navigation links as needed */}
+      <NavLink to="/meats" activeClassName="active">Meats</NavLink>
     </nav>
   );
 };
